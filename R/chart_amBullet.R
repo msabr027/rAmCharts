@@ -50,12 +50,12 @@ amBullet <- function(value, min = 0, max = 100, val_color = "#000000",
 {
   
   if (missing(rates))
-    rates <- data.frame(name = c("excelent", "good", "average", "poor", "bad"),
-                        min = c(0, 20, 40, 60, 80),
-                        max = c(20, 40, 60, 80, 100),
-                        color = c("#19d228", "#b4dd1e", "#f4fb16",
-                                  "#f6d32b", "#fb7116"),
-                        stringsAsFactors = FALSE)
+  rates <- data.frame(name = c('bad', 'poor', 'average', 'good', 'excelent'),
+                      min = c(0, 20, 40, 60, 80),
+                      max = c(20, 40, 60, 80, 100),
+                      color = c('#fb7116', '#f6d32b', '#f4fb16',
+                               '#b4dd1e','#19d228' ),             
+                      stringsAsFactors = FALSE)
   
   ##Test
   #Test rates
