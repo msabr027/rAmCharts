@@ -124,7 +124,8 @@ amRadar <- function(data, col = NULL,  backTransparency = 0.5, type = "polygons"
 
   res <- amRadarChart(dataProvider = data, categoryField = "label") %>>% 
     setGraphs(graphs) %>>% 
-    addValueAxis(valueaxe)
+    addValueAxis(valueaxe) %>>% 
+    amOptions(mainSize=25)
   
 
   res <- amOptions(res, ...)
